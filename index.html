@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Typing test</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="pagebody">
+    <div class="maincontainer">
+      <div class="stats">
+         <p>Time:<span id="stopwatch" class="time">00:00</span>
+            Mistakes:<span id="mistake" class="mistake">0s</span>
+        </p>
+    </div>
+    
+    <!-- <p id="startone"class="startone" >START TEST BY CLICKING ON BUTTON </p> -->
+    <div id="quote" >Lorem ipsum dolor sit ametus omnisitaque corporis quaerat cumque iusto quis modi saepe alias, unde perferendis.</div>
+     
+
+    <textarea rows="3"spellcheck="false" id="quoteinput" placeholder="Type here when the text starts....." style="visibility:hidden;"></textarea>
+    <button id = "start" onclick="startTimer()">Start Test</button>
+    <button id ="stop" onclick="stopTimer()">Stop Test</button>
+    <center>
+    <p id="result" onclick="stopTimer()"style="visibility:hidden;" ><b>Your status</b> </p>    
+    </center>
+        <div class="wrapper">
+            <p>Accuracy:<span id="accuracy" style="font-weight: 600;"><b>0</b></span></p>
+            <p>Speed wpm :<span id="wpm" style="font-weight: 600;"><b>0</b></span></p>
+        </div>
+        <div class="result">
+            <!-- <h3 id="result" onclick="stopTimer()" style="visibility:hidden;" >Result</h3> -->
+            <center>
+            <p id="remark" style="visibility:hidden;">0</p>
+            <p id="completeone" style="visibility:hidden;" >Thanks for completing !! </p>
+            </center>
+        </div>    
+</div>
+</div>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="script3.js"></script>
+<script src="script2.js"></script>
+</body>
+</html>
